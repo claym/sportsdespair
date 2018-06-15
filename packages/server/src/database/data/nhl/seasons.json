@@ -1,0 +1,135 @@
+{
+    "seasons": [{
+            "id": "fad5676d-352e-4624-a3d4-d65b0473b81b",
+            "created_at": "2017-08-16T20:00:00-04:00",
+            "updated_at": "2017-08-16T20:00:00-04:00",
+            "name": "2017-2018",
+            "current_interval_type": "postseason",
+            "starts_on": "2017-09-01",
+            "ends_on": "2018-06-30",
+            "stats_coverage": "season_stat_and_boxscore_play_by_play",
+            "slug": "nhl-2017-2018",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "0e4a4772-054b-4d77-b724-03aba77f84a6",
+            "created_at": "2016-06-14T21:00:02-04:00",
+            "updated_at": "2017-03-07T09:02:51-05:00",
+            "name": "2016-2017",
+            "current_interval_type": "postseason",
+            "starts_on": "2016-09-01",
+            "ends_on": "2017-06-30",
+            "stats_coverage": "season_stat_and_boxscore_play_by_play",
+            "slug": "nhl-2016-2017",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "301759de-976d-4daa-a194-cacea1dc02ca",
+            "created_at": "2015-11-28T22:33:56-05:00",
+            "updated_at": "2017-03-07T09:02:51-05:00",
+            "name": "2015-2016",
+            "current_interval_type": "stanleycupfinals",
+            "starts_on": "2015-09-01",
+            "ends_on": "2016-06-30",
+            "stats_coverage": "season_stat_and_boxscore",
+            "slug": "nhl-2015-2016",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "fc939802-3353-44c6-9326-ec192b0fce79",
+            "created_at": "2015-11-30T00:59:05-05:00",
+            "updated_at": "2017-03-07T09:02:51-05:00",
+            "name": "2014-2015",
+            "current_interval_type": "regularseason",
+            "starts_on": "2014-09-01",
+            "ends_on": "2015-06-30",
+            "stats_coverage": "season_stat",
+            "slug": "nhl-2014-2015",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "0741a7a7-0b56-4620-ad15-a8469262ff80",
+            "created_at": "2016-04-06T11:15:07-04:00",
+            "updated_at": "2017-03-07T09:02:51-05:00",
+            "name": "2013-2014",
+            "current_interval_type": "regularseason",
+            "starts_on": "2013-09-01",
+            "ends_on": "2014-06-30",
+            "stats_coverage": "season_stat",
+            "slug": "nhl-2013-2014",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "815aef1e-5d4b-43c1-9d0b-cbbf5c9ad96e",
+            "created_at": "2016-04-06T11:12:53-04:00",
+            "updated_at": "2016-04-06T11:12:53-04:00",
+            "name": "2012-2013",
+            "current_interval_type": "regularseason",
+            "starts_on": "2012-09-01",
+            "ends_on": "2013-06-26",
+            "stats_coverage": "no_coverage",
+            "slug": "nhl-2012-2013",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "16377b82-2176-478b-a5bd-6a7314a68565",
+            "created_at": "2016-04-06T11:08:44-04:00",
+            "updated_at": "2016-04-06T11:08:44-04:00",
+            "name": "2011-2012",
+            "current_interval_type": "regularseason",
+            "starts_on": "2011-09-01",
+            "ends_on": "2012-06-17",
+            "stats_coverage": "no_coverage",
+            "slug": "nhl-2011-2012",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "d6bacfde-9c0b-43d2-8b2e-f730b3779fb5",
+            "created_at": "2017-03-07T09:02:50-05:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2010-2011",
+            "current_interval_type": "regularseason",
+            "starts_on": "2009-10-07",
+            "ends_on": "2011-06-15",
+            "stats_coverage": "no_coverage",
+            "slug": "nhl-2010-2011",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "c85e4aee-ffe5-4cfc-a309-f9ef0356e1bb",
+            "created_at": "2017-03-07T09:02:50-05:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2009-2010",
+            "current_interval_type": "regularseason",
+            "starts_on": "2009-10-01",
+            "ends_on": "2010-06-09",
+            "stats_coverage": "no_coverage",
+            "slug": "nhl-2009-2010",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "2d68ab72-2c04-4e85-a50b-b3e31a59c0f1",
+            "created_at": "2016-04-06T11:04:48-04:00",
+            "updated_at": "2016-04-06T11:04:48-04:00",
+            "name": "2007-2008",
+            "current_interval_type": "regularseason",
+            "starts_on": "2007-09-29",
+            "ends_on": "2008-06-30",
+            "stats_coverage": "no_coverage",
+            "slug": "nhl-2007-2008",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        },
+        {
+            "id": "151133d5-20ee-47e5-9450-78f8274eb97a",
+            "created_at": "2016-04-06T11:07:50-04:00",
+            "updated_at": "2016-04-06T11:07:50-04:00",
+            "name": "2006-2007",
+            "current_interval_type": "regularseason",
+            "starts_on": "2006-10-04",
+            "ends_on": "2007-06-30",
+            "stats_coverage": "no_coverage",
+            "slug": "nhl-2006-2007",
+            "league_id": "48803e9e-c4ec-414a-a85d-9abfa6e9cfd9"
+        }
+    ]
+}

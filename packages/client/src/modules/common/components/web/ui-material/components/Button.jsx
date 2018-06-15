@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button as RSButton } from 'reactstrap';
+import MUButton from '@material-ui/core/Button';
 
 const Button = ({ children, ...props }) => {
-  return <RSButton {...props}>{children}</RSButton>;
+  return (
+    <MUButton variant="contained" {...props}>
+      {children}
+    </MUButton>
+  );
 };
 
 Button.propTypes = {

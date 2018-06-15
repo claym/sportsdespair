@@ -22,6 +22,7 @@ const Html = ({ content, state, assetMap, css, helmet }) => {
         <link rel="manifest" href={`${assetMap['manifest.xjson']}`} />
         <link rel="mask-icon" href={`${assetMap['safari-pinned-tab.svg']}`} color="#5bbad5" />
         <link rel="shortcut icon" href={`${assetMap['favicon.ico']}`} />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <meta name="msapplication-config" content={`${assetMap['browserconfig.xml']}`} />
         <meta name="theme-color" content="#ffffff" />
         {!__DEV__ && <link rel="stylesheet" type="text/css" href={`${assetMap['index.css']}`} />}

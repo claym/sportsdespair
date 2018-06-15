@@ -1,0 +1,123 @@
+{
+    "seasons": [{
+            "id": "cc39f607-f6cb-46e4-a854-1388bb481712",
+            "created_at": "2017-02-14T19:00:00-05:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2018",
+            "current_interval_type": "regularseason",
+            "starts_on": "2018-01-02",
+            "ends_on": "2018-11-30",
+            "stats_coverage": "season_stat_and_boxscore_play_by_play",
+            "slug": "mlb-2018",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "7273bcc6-f05f-42e0-a860-e05c1e943078",
+            "created_at": "2017-02-14T19:00:00-05:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2017",
+            "current_interval_type": "regularseason",
+            "starts_on": "2017-01-02",
+            "ends_on": "2017-11-30",
+            "stats_coverage": "season_stat_and_boxscore_play_by_play",
+            "slug": "mlb-2017",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "508f7fd8-a4a0-4047-a60d-3e9e7f1eebb0",
+            "created_at": "2016-03-18T20:56:43-04:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2016",
+            "current_interval_type": "regularseason",
+            "starts_on": "2016-01-02",
+            "ends_on": "2016-11-30",
+            "stats_coverage": "season_stat_and_boxscore_play_by_play",
+            "slug": "mlb-2016",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "e46014e6-f9e9-41c3-9deb-cd11ee879d75",
+            "created_at": "2016-03-18T21:03:28-04:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2015",
+            "current_interval_type": "regularseason",
+            "starts_on": "2015-02-01",
+            "ends_on": "2015-11-30",
+            "stats_coverage": "season_stat_and_boxscore",
+            "slug": "mlb-2015",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "f41c1a91-e3ab-452c-9d4c-256b6b9fdc08",
+            "created_at": "2016-04-06T11:25:09-04:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2014",
+            "current_interval_type": "regularseason",
+            "starts_on": "2014-02-02",
+            "ends_on": "2014-11-30",
+            "stats_coverage": "season_stat",
+            "slug": "mlb-2014",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "335c1447-274f-4034-9ca8-f86d24417d5a",
+            "created_at": "2016-04-06T11:19:07-04:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2013",
+            "current_interval_type": "regularseason",
+            "starts_on": "2013-02-02",
+            "ends_on": "2013-11-30",
+            "stats_coverage": "season_stat",
+            "slug": "mlb-2013",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "c5aff574-e16b-42e5-9f50-21ab6a34b4df",
+            "created_at": "2016-04-06T11:18:16-04:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2012",
+            "current_interval_type": "regularseason",
+            "starts_on": "2012-02-01",
+            "ends_on": "2012-11-15",
+            "stats_coverage": "season_stat",
+            "slug": "mlb-2012",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "8784b8be-c6d8-49dd-ae12-a6ea034da31b",
+            "created_at": "2017-03-07T09:02:50-05:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2011",
+            "current_interval_type": "regularseason",
+            "starts_on": "2011-03-31",
+            "ends_on": "2011-10-28",
+            "stats_coverage": "no_coverage",
+            "slug": "mlb-2011",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "8abcba39-6e64-4c52-b951-3730f3350b2d",
+            "created_at": "2016-04-08T16:11:22-04:00",
+            "updated_at": "2016-04-08T16:11:22-04:00",
+            "name": "2010",
+            "current_interval_type": "regularseason",
+            "starts_on": "2010-03-02",
+            "ends_on": "2010-11-15",
+            "stats_coverage": "no_coverage",
+            "slug": "mlb-2010",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        },
+        {
+            "id": "b9c5e949-4dd1-4899-9c85-e9138037b678",
+            "created_at": "2016-04-06T11:23:27-04:00",
+            "updated_at": "2016-04-06T11:23:27-04:00",
+            "name": "2009",
+            "current_interval_type": "regularseason",
+            "starts_on": "2009-02-24",
+            "ends_on": "2009-11-05",
+            "stats_coverage": "no_coverage",
+            "slug": "mlb-2009",
+            "league_id": "cb399a17-e581-4f1a-9535-ea3bcb09fa1f"
+        }
+    ]
+}

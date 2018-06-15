@@ -1,0 +1,123 @@
+{
+    "seasons": [{
+            "id": "755c60e7-4bd7-4939-b755-2c2c318ac1f0",
+            "created_at": "2017-08-16T20:00:00-04:00",
+            "updated_at": "2017-08-16T20:00:00-04:00",
+            "name": "2017-2018",
+            "current_interval_type": "postseason",
+            "starts_on": "2017-10-01",
+            "ends_on": "2018-06-30",
+            "stats_coverage": "season_stat_and_boxscore_play_by_play",
+            "slug": "nba-2017-2018",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "b0ce2ee1-61bd-44ea-bd34-450160a10e49",
+            "created_at": "2016-06-22T10:05:25-04:00",
+            "updated_at": "2017-03-07T09:02:51-05:00",
+            "name": "2016-2017",
+            "current_interval_type": "regularseason",
+            "starts_on": "2016-10-01",
+            "ends_on": "2017-06-30",
+            "stats_coverage": "season_stat_and_boxscore_play_by_play",
+            "slug": "nba-2016-2017",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "e56321f3-1c81-4f91-9bdf-8dac07129648",
+            "created_at": "2015-11-28T22:33:56-05:00",
+            "updated_at": "2017-03-07T09:02:51-05:00",
+            "name": "2015-2016",
+            "current_interval_type": "regularseason",
+            "starts_on": "2015-10-01",
+            "ends_on": "2016-06-30",
+            "stats_coverage": "season_stat_and_boxscore",
+            "slug": "nba-2015-2016",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "693a1e84-85f0-4206-9b62-9b888c981d00",
+            "created_at": "2015-11-30T00:00:51-05:00",
+            "updated_at": "2017-03-07T09:02:51-05:00",
+            "name": "2014-2015",
+            "current_interval_type": "regularseason",
+            "starts_on": "2014-10-01",
+            "ends_on": "2015-06-30",
+            "stats_coverage": "season_stat",
+            "slug": "nba-2014-2015",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "90043ee3-1f4c-431f-8847-678d9422ea9d",
+            "created_at": "2016-04-06T11:09:36-04:00",
+            "updated_at": "2017-03-07T09:02:51-05:00",
+            "name": "2013-2014",
+            "current_interval_type": "regularseason",
+            "starts_on": "2013-10-01",
+            "ends_on": "2014-06-26",
+            "stats_coverage": "season_stat",
+            "slug": "nba-2013-2014",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "faa441b1-54a3-4faf-ac88-18667c3568e4",
+            "created_at": "2016-04-06T11:04:13-04:00",
+            "updated_at": "2016-04-06T11:04:13-04:00",
+            "name": "2012-2013",
+            "current_interval_type": "regularseason",
+            "starts_on": "2012-10-05",
+            "ends_on": "2013-06-21",
+            "stats_coverage": "no_coverage",
+            "slug": "nba-2012-2013",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "6bc9e96f-4889-42b7-8930-b995c84fdd1d",
+            "created_at": "2016-04-06T11:01:16-04:00",
+            "updated_at": "2016-04-06T11:01:16-04:00",
+            "name": "2011-2012",
+            "current_interval_type": "regularseason",
+            "starts_on": "2011-10-03",
+            "ends_on": "2012-06-27",
+            "stats_coverage": "no_coverage",
+            "slug": "nba-2011-2012",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "ea587fdf-10a9-414e-9fa7-28ef393a24ac",
+            "created_at": "2017-03-07T09:02:50-05:00",
+            "updated_at": "2017-03-07T09:02:50-05:00",
+            "name": "2010-2011",
+            "current_interval_type": "regularseason",
+            "starts_on": "2010-10-26",
+            "ends_on": "2011-06-12",
+            "stats_coverage": "no_coverage",
+            "slug": "nba-2010-2011",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "bc81d766-f845-424a-96e5-e2bddf0d43aa",
+            "created_at": "2016-04-06T11:00:56-04:00",
+            "updated_at": "2016-04-06T11:00:56-04:00",
+            "name": "2008-2009",
+            "current_interval_type": "regularseason",
+            "starts_on": "2008-10-28",
+            "ends_on": "2009-06-14",
+            "stats_coverage": "no_coverage",
+            "slug": "nba-2008-2009",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        },
+        {
+            "id": "a66f4343-6496-4385-b200-4c464581d12e",
+            "created_at": "2016-04-06T11:01:14-04:00",
+            "updated_at": "2016-04-06T11:01:14-04:00",
+            "name": "2006-2007",
+            "current_interval_type": "regularseason",
+            "starts_on": "2006-10-05",
+            "ends_on": "2007-06-30",
+            "stats_coverage": "no_coverage",
+            "slug": "nba-2006-2007",
+            "league_id": "3c805f57-ef31-407d-b633-54bac8745b9e"
+        }
+    ]
+}

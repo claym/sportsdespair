@@ -1,0 +1,31 @@
+{
+    "divisions": [{
+            "id": "11740eea-c575-44e9-b4f5-a80805703ad0",
+            "created_at": "2015-11-28T22:33:56-05:00",
+            "updated_at": "2016-10-12T19:04:13-04:00",
+            "name": "Pacific",
+            "conference_id": "95e3218b-fa5e-4bb8-a6ff-acb61da1876c"
+        },
+        {
+            "id": "15ca4e46-2b49-4f37-84ea-befb62de28c5",
+            "created_at": "2015-11-28T22:33:56-05:00",
+            "updated_at": "2016-10-12T19:04:13-04:00",
+            "name": "Atlantic",
+            "conference_id": "b6a5910b-bd9b-4fb3-b7e5-654c2ae17fa3"
+        },
+        {
+            "id": "2a45d995-a56b-43c8-838d-700e5cf1f922",
+            "created_at": "2015-11-28T22:33:56-05:00",
+            "updated_at": "2016-10-12T19:04:13-04:00",
+            "name": "Metropolitan",
+            "conference_id": "b6a5910b-bd9b-4fb3-b7e5-654c2ae17fa3"
+        },
+        {
+            "id": "8e46750a-615a-4362-8468-26a8541fc713",
+            "created_at": "2015-11-28T22:33:56-05:00",
+            "updated_at": "2016-10-12T19:04:13-04:00",
+            "name": "Central",
+            "conference_id": "95e3218b-fa5e-4bb8-a6ff-acb61da1876c"
+        }
+    ]
+}
