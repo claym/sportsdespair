@@ -6,6 +6,13 @@ export async function up(knex) {
       .boolean('primary')
       .defaultTo(false)
       .notNull();
+    table
+      .integer('team_id')
+      .unsigned()
+      .references('id')
+      .inTable('team')
+      .onDelete('CASCADE')
+      .withKeyName('FK_team_hashtag_team');
     table.timestamps(false, true);
   });
 }

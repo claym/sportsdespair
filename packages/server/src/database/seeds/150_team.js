@@ -40,28 +40,28 @@ export async function seed(knex) {
           });
 
           await Promise.all(
-            team.images.map(async image => {
+            team.images.map(async (image, index) => {
               await returnId(knex('team_image')).insert({
-                value: image.image,
-                primary: image.primary ? 1 : 0,
+                value: image,
+                primary: index == 0 ? 1 : 0,
                 team_id: teamId[0]
               });
             })
           );
           await Promise.all(
-            team.images.map(async image => {
-              await returnId(knex('team_image')).insert({
-                value: image.image,
-                primary: image.primary ? 1 : 0,
+            team.colors.map(async (color, index) => {
+              await returnId(knex('team_color')).insert({
+                value: color,
+                primary: index == 0 ? 1 : 0,
                 team_id: teamId[0]
               });
             })
           );
           await Promise.all(
-            team.images.map(async image => {
-              await returnId(knex('team_image')).insert({
-                value: image.image,
-                primary: image.primary ? 1 : 0,
+            team.hashtags.map(async (hashtag, index) => {
+              await returnId(knex('team_hashtag')).insert({
+                value: hashtag,
+                primary: index == 0 ? 1 : 0,
                 team_id: teamId[0]
               });
             })

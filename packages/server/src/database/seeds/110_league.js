@@ -6,12 +6,10 @@ export async function seed(knex) {
   var sports = await knex('sport')
     .select('id', 'slug')
     .then(rows => {
-      console.log('rows: ' + JSON.stringify(rows));
       return rows;
     });
   await Promise.all(
     data.leagues.map(async league => {
-      console.log('sport: ' + league.sport);
       await returnId(knex('league')).insert({
         name: league.name,
         abbr: league.abbreviation,

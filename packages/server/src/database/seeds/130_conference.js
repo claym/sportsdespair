@@ -11,7 +11,6 @@ export async function seed(knex) {
   var leagueData = await knex('league')
     .select('id', 'api_id')
     .then(rows => {
-      console.log('rows: ' + rows);
       return rows;
     });
   await Promise.all(

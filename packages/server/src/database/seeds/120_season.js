@@ -8,11 +8,9 @@ import nhl from '../data/nhl/seasons.json';
 const leagues = [mlb, nba, nfl, nhl];
 
 export async function seed(knex) {
-  console.log('Loading Seasons');
   var leagueData = await knex('league')
     .select('id', 'api_id')
     .then(rows => {
-      console.log('rows: ' + rows);
       return rows;
     });
   await Promise.all(
