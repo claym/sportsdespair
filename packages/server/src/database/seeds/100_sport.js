@@ -1,35 +1,18 @@
 import { returnId, truncateTables } from '../../sql/helpers';
 
+//import data from '../data/sports.json';
+
 export async function seed(knex, Promise) {
-  await truncateTables(knex, Promise, ['sport', 'league', 'conference', 'division', 'team', 'team_hashtag']);
+  await truncateTables(knex, Promise, ['sport']);
 
-  await returnId(knex('sport')).insert({
-    name: 'Baseball',
-    slug: 'baseball',
-    image: 'sports/baseball.svg'
-  });
-
-  await returnId(knex('sport')).insert({
-    name: 'Basketball',
-    slug: 'basketball',
-    image: 'sports/basketball.svg'
-  });
-
-  await returnId(knex('sport')).insert({
-    name: 'Football',
-    slug: 'football',
-    image: 'sports/football.svg'
-  });
-
-  await returnId(knex('sport')).insert({
-    name: 'Hockey',
-    slug: 'hockey',
-    image: 'sports/hockey.svg'
-  });
-
-  await returnId(knex('sport')).insert({
-    name: 'Soccer',
-    slug: 'soccer',
-    image: 'sports/soccer.svg'
-  });
+  var data = require('../data/sports.json');
+  await Promise.all(
+    data.sports.map(async sport => {
+      await returnId(knex('sport')).insert({
+        name: sport.name,
+        slug: sport.slug,
+        image: sport.image
+      });
+    })
+  );
 }

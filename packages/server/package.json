@@ -98,7 +98,7 @@
     "passport-linkedin-oauth2": "^1.5.0",
     "passport-local": "^1.0.0",
     "performance-now": "^2.1.0",
-    "pg": "^7.4.0",
+    "pg": "^7.4.3",
     "prop-types": "^15.6.0",
     "react": "16.3.1",
     "react-apollo": "^2.1.4",

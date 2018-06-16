@@ -1,11 +1,18 @@
 export async function up(knex) {
-  return knex.schema.createTable('team_colors', table => {
+  return knex.schema.createTable('team_image', table => {
     table.increments();
     table.string('value').notNull();
     table
       .boolean('primary')
       .defaultTo(false)
       .notNull();
+    table
+      .integer('team_id')
+      .unsigned()
+      .references('id')
+      .inTable('team')
+      .onDelete('CASCADE')
+      .withKeyName('FK_team_image_team');
     table.timestamps(false, true);
   });
 }

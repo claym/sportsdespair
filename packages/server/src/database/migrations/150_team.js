@@ -2,28 +2,28 @@ export async function up(knex) {
   return knex.schema.createTable('team', table => {
     table.increments();
     table.string('name').notNull();
-    table.string('image').notNull();
+    table.string('nickname');
+    //table.string('image').notNull();
     table.string('slug').notNull();
     table.string('api_id').notNull();
+    table.float('latitude');
+    table.float('longitude');
+    table.specificType('location', 'GEOGRAPHY');
     table
-      .integer('sport_id')
+      .integer('league_id')
       .unsigned()
       .references('id')
       .inTable('sport')
       .onDelete('CASCADE')
+      .withKeyName('FK_team_league')
       .notNull();
-    table
-      .integer('conference_id')
-      .unsigned()
-      .references('id')
-      .inTable('conference')
-      .onDelete('CASCADE');
     table
       .integer('division_id')
       .unsigned()
       .references('id')
       .inTable('division')
-      .onDelete('CASCADE');
+      .onDelete('CASCADE')
+      .withKeyName('FK_team_division');
     table.timestamps(false, true);
   });
 }
