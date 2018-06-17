@@ -1,0 +1,37 @@
+type Team {
+  id: Int!
+  name: String!
+  nickname: String
+  images: [TeamImage]
+  colors: [TeamColor]
+  hashtags: [TeamHashtag]
+}
+
+type TeamColor {
+  id: Int!
+  value: String!
+  primary: Boolean!
+}
+
+type TeamImage {
+  id: Int!
+  value: String!
+  primary: Boolean!
+}
+
+type TeamHashtag {
+  id: Int!
+  value: String!
+  primary: Boolean!
+}
+
+extend type Query {
+  # Team
+  getTeam(id: Int!): Team
+  # Team List
+  getTeams(ids: [Int!]): [Team]
+}
+
+# extend type Mutation {}
+
+# extend type Subscription {}
