@@ -1,3 +1,4 @@
+import team from './team';
 import defaultRouter from './defaultRouter';
 import i18n from './i18n';
 import counter from './counter';
@@ -14,6 +15,7 @@ import Feature from './connector';
 
 export default new Feature(
   defaultRouter,
+  team,
   counter,
   post,
   upload,

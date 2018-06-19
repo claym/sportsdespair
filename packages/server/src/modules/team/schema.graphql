@@ -2,6 +2,8 @@ type Team {
   id: Int!
   name: String!
   nickname: String
+  latitude: Float
+  longitude: Float
   images: [TeamImage]
   colors: [TeamColor]
   hashtags: [TeamHashtag]
@@ -30,6 +32,8 @@ extend type Query {
   getTeam(id: Int!): Team
   # Team List
   getTeams(ids: [Int!]): [Team]
+  #Team List By Location
+  getTeamsByLocation(latitude: Float!, longitude: Float!): [Team]
 }
 
 # extend type Mutation {}

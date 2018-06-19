@@ -9,7 +9,7 @@ import resources from './locales';
 import Feature from '../connector';
 
 export default new Feature({
-  route: <Route exact path="/" component={Counter} />,
+  route: <Route exact path="/counter" component={Counter} />,
   resolver: resolvers,
   reducer: { counter: reducers },
   localization: { ns: 'counter', resources }

@@ -1,0 +1,11 @@
+# GraphQL queries
+
+query getTeamsByLeague {
+  team {
+    name
+    nickname
+    images
+    colors
+    hashtags
+  }
+}

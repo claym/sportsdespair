@@ -21,6 +21,34 @@ export default class Team {
         .whereIn('t.id', ids)
     );
   }
+  async teamsByLocation(latitude, longitude) {
+    return camelizeKeys(
+      await knex
+        .raw(
+          `with location as (
+        select
+          t.id,
+          t.name,
+          t.nickname,
+          t.latitude,
+          t.longitude,
+          st_distance(t.location, ST_POINT(?, ?)) as distance,
+          row_number()
+          over (
+            PARTITION BY t.league_id
+            order by st_distance(t.location, ST_POINT(?, ?)) ) as rank
+        from team t)
+        select l.id, l.name, l.nickname, l.latitude, l.longitude
+        from location l
+        where l.rank = 1
+        order by distance`,
+          [longitude, latitude, longitude, latitude]
+        )
+        .then(data => {
+          return data.rows;
+        })
+    );
+  }
   async getTeamImages(teamIds) {
     return this.getTeamValueChildren(teamIds, 'team_image');
   }
