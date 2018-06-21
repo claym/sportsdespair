@@ -1,3 +1,4 @@
+import iplocation from './iplocation';
 import team from './team';
 import counter from './counter';
 import post from './post';
@@ -13,6 +14,7 @@ import './debug';
 import Feature from './connector';
 
 export default new Feature(
+  iplocation,
   team,
   counter,
   post,
