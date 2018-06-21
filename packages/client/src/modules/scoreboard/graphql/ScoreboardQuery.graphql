@@ -1,0 +1,18 @@
+# GraphQL queries
+query teamList($latitude: Float!, $longitude: Float!) {
+  getTeamsByLocation(latitude: $latitude, longitude: $longitude) {
+    id
+    name
+    nickname
+    images {
+      id
+      value
+      primary
+    }
+    colors {
+      id
+      value
+      primary
+    }
+  }
+}
