@@ -1,7 +1,9 @@
 import { expect } from 'chai';
 import { step } from 'mocha-steps';
-import Renderer from '../../../../../client/src/testHelpers/Renderer';
-import Routes from '../../../../../client/src/app/Routes';
+//import Renderer from '../../../../../../client/testHelpers/Renderer';
+import Renderer from '../../../testHelpers/Renderer';
+//import Routes from '../../../../client/app/Routes';
+import Routes from '../../../app/Routes';
 
 describe('Scoreboard UI works', () => {
   const renderer = new Renderer({});
