@@ -4,6 +4,7 @@ type Team {
   nickname: String
   latitude: Float
   longitude: Float
+  weight: Int
   images: [TeamImage]
   colors: [TeamColor]
   hashtags: [TeamHashtag]
@@ -33,7 +34,9 @@ extend type Query {
   # Team List
   getTeams(ids: [Int!]): [Team]
   #Team List By Location
-  getTeamsByLocation(latitude: Float!, longitude: Float!): [Team]
+  getTeamsByCoordinates(latitude: Float!, longitude: Float!): [Team]
+
+  getTeamsByUser(userId: Int!): [Team]
 }
 
 # extend type Mutation {}

@@ -9,8 +9,13 @@ export default pubsub => ({
     async getTeams(obj, { ids }, context) {
       return context.Team.teams(ids);
     },
-    async getTeamsByLocation(obj, { latitude, longitude }, context) {
-      return context.Team.teamsByLocation(latitude, longitude);
+    async getTeamsByCoordinates(obj, { latitude, longitude }, context) {
+      return context.Team.teamsByCoordinates(latitude, longitude);
+    },
+    async getTeamsByUser(obj, { userId }, context) {
+      var val = context.Team.teamsByUser(userId);
+      console.log(val);
+      return val;
     }
   },
   Team: {

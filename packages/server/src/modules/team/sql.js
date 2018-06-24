@@ -21,7 +21,7 @@ export default class Team {
         .whereIn('t.id', ids)
     );
   }
-  async teamsByLocation(latitude, longitude) {
+  async teamsByCoordinates(latitude, longitude) {
     return camelizeKeys(
       await knex
         .raw(
@@ -32,20 +32,34 @@ export default class Team {
           t.nickname,
           t.latitude,
           t.longitude,
-          st_distance(t.location, ST_POINT(?, ?)) as distance,
+          st_distance(t.location, ST_POINT(:longitude, :latitude)) as distance,
           row_number()
           over (
             PARTITION BY t.league_id
-            order by st_distance(t.location, ST_POINT(?, ?)) ) as rank
+            order by st_distance(t.location, ST_POINT(:longitude, :latitude)) ) as rank
         from team t)
         select l.id, l.name, l.nickname, l.latitude, l.longitude
         from location l
         where l.rank = 1
         order by distance`,
-          [longitude, latitude, longitude, latitude]
+          { longitude: longitude, latitude: latitude }
         )
         .then(data => {
           return data.rows;
+        })
+    );
+  }
+  async teamsByUser(userId) {
+    return camelizeKeys(
+      await knex
+        .select('t.id', 't.name', 't.nickname', 't.latitude', 't.longitude', 'ut.weight')
+        .from('team as t')
+        .innerJoin('user_team as ut', 't.id', 'ut.team_id')
+        .where({ user_id: userId })
+        .orderBy('ut.weight', 'desc')
+        .orderBy('t.nickname', 'asc')
+        .then(rows => {
+          return rows;
         })
     );
   }

@@ -91,7 +91,7 @@ const LocationQuery = location => {
 
         return (
           <div className="text-center mt-4 mb-4">
-            {data.getTeamsByLocation.map(team => <TeamDisplay key={team.id} team={team} />)}
+            {data.getTeamsByCoordinates.map(team => <TeamDisplay key={team.id} team={team} />)}
           </div>
         );
       }}
