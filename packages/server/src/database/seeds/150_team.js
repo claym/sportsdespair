@@ -13,7 +13,7 @@ export async function seed(knex) {
     .then(rows => {
       return rows;
     });
-  const divisionData = await knex('division')
+  const groupData = await knex('group')
     .select('id', 'api_id')
     .then(rows => {
       return rows;
@@ -31,8 +31,8 @@ export async function seed(knex) {
             longitude: team.longitude,
             latitude: team.latitude,
             location: knex.raw('ST_POINT(' + team.longitude + ', ' + team.latitude + ')'),
-            division_id: divisionData.find(division => {
-              return division.api_id == team.division_id;
+            group_id: groupData.find(group => {
+              return group.api_id == team.division_id;
             }).id,
             league_id: leagueData.find(league => {
               return league.api_id == team.league_id;

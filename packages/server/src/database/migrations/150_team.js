@@ -18,12 +18,12 @@ export async function up(knex) {
       .withKeyName('FK_team_league')
       .notNull();
     table
-      .integer('division_id')
+      .integer('group_id')
       .unsigned()
       .references('id')
-      .inTable('division')
+      .inTable('group')
       .onDelete('CASCADE')
-      .withKeyName('FK_team_division');
+      .withKeyName('FK_team_group');
     table.timestamps(false, true);
   });
 }

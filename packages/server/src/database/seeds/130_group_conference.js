@@ -17,7 +17,7 @@ export async function seed(knex) {
     await leagues.map(async league => {
       return Promise.all(
         await league.conferences.map(async conference => {
-          await returnId(knex('conference')).insert({
+          await returnId(knex('group')).insert({
             name: conference.name,
             api_id: conference.id,
             league_id: leagueData.find(league => {
