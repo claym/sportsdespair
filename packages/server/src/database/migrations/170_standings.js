@@ -52,6 +52,7 @@ export async function up(knex) {
     table.integer('league_rank').notNullable();
     table.integer('conference_rank').defaultTo(1);
     table.integer('division_rank').defaultTo(1);
+    table.integer('playoff_rank');
     table
       .decimal('league_back', 4, 1)
       .notNullable()
